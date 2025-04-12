@@ -1,6 +1,6 @@
 
 import React, { useRef } from 'react';
-import './hero.css';
+import './Hero.css';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
