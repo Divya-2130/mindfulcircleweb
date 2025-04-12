@@ -1,6 +1,6 @@
 import React from "react";
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom"; // Use HashRouter
 import Hero from './Components/Hero/Hero';
 import Yogohome from './Components/Yogohome/Yogohome';
 import Foodhome from "./Components/Foodhome/Foodhome";
@@ -10,12 +10,12 @@ import Contact from "./Components/Contact/Contact";
 import Category from "./Pages/Category";
 import ContextProvider from './Context/Context';
 import Other from "./Pages/Other";
+
 const App = () => {
   return (
-    <ContextProvider> {/* Wrap everything inside context */}
-      <BrowserRouter>
+    <ContextProvider>
+      <HashRouter>
         <Routes>
-          {/* Home Route */}
           <Route path="/" element={
             <div className="home-page">
               <Hero />
@@ -25,8 +25,6 @@ const App = () => {
               <Abouthome />
             </div>
           } />
-
-          {/* Category Routes */}
           <Route path="/yoga" element={
             <div className="category-page">
               <Hero />
@@ -41,13 +39,13 @@ const App = () => {
           } />
           <Route path="/other" element={
             <div className="category-page">
-              <Hero /> *
+              <Hero />
               <Other category="other" />
             </div>
           } />
         </Routes>
-        <Contact/>
-      </BrowserRouter>
+        <Contact />
+      </HashRouter>
     </ContextProvider>
   );
 };
