@@ -73,11 +73,23 @@
         font-size: 500;
     }
     .copy-right {
-        font-size: 30px;
+        font-size: 25px;
     }
 }
-@media (max-width:1000px) {
-    .copy-right {
-        font-size: 20px;
+@media (max-width:500px) {
+    .contact-container {
+        width: 80%;
     }
+    .contact-container form input {
+        font-size: 18px;
+        font-size: 400;
+    }
+    .contact-container form textarea  {
+        font-size: 18px;
+        font-size: 500;
+    }
+    .copy-right {
+        font-size: 21px;
+    }
+
 }
