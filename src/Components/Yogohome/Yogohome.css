@@ -140,4 +140,45 @@
     .yogo-left p {
         font-size: 24px;
     }
+    .yoga-right-img {
+        width: 300px;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+    .yoga-right-img img {
+        filter: blur(2px); 
+        width: 100%;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        transition: 1s;
+    
+    }
+}
+@media (max-width:500px) {
+    .h11 h2 {
+        font-size: 2vw;
+        letter-spacing: 2px;
+        font-weight: 700;
+        padding:none;  
+    }
+    .yogo-left p {
+        font-size: 18px;
+    }
+    .yoga-right-img {
+        width: 200px;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+    .yoga-right-img img {
+        filter: blur(2px); 
+        width: 100%;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        transition: 1s;
+    
+    }
 }

@@ -1,10 +1,6 @@
 import React from 'react'
 import './Yogohome.css'
-// import yogohome from '../Assets/yogahome.mp4'
-// import y5_img from '../Assets/y5.png'
-// import y6_img from '../Assets/y6.png'
-// import y7_img from '../Assets/y7.png'
-// import y8_img from '../Assets/y8.png'
+
 const Yogohome = () => {
   return (
     <div className='yogohome-background'>

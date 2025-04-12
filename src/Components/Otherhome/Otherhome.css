@@ -108,11 +108,25 @@
     border-radius: 10px; 
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 550px) {
   .videos-container video {
     all: unset;
     flex: 0 0 auto; 
     width: 150px;
     border-radius: 10px; 
+  }
+  .otherhome-background {
+    height: 170vh;
+  }
+}
+@media (max-width: 300px) {
+  .videos-container video {
+    all: unset;
+    flex: 0 0 auto; 
+    width: 110px;
+    border-radius: 10px; 
+  }
+  .otherhome-background {
+    height: 170vh;
   }
 }
