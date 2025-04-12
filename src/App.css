@@ -1,0 +1,18 @@
+/* Ensure each page section has its own layout */
+.home-page, .category-page {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden; /* Prevent extra scrolling issues */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Ensure images inside each page do not shrink */
+  .responsive-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  

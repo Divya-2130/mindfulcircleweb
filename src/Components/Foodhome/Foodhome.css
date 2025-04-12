@@ -1,0 +1,194 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  
+  /* Main Background Container */
+  
+  .foodhome-background {
+    
+    margin-bottom:10% ;
+    width: 100%;
+    height: 120vh;
+    position: relative;
+  }
+  .foodhome-background .foodhome-image {
+    position:absolute;
+    height: 120vh;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+  }
+  
+  /* Background Image Styling */
+  .foodhome-background .foodhome-image {
+  
+    width: 100%;
+    z-index: -1;
+    filter: blur(5px) brightness(1.1);  
+  } 
+  
+  /* Heading Container */
+  .h11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+  }
+  
+  div span {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  div h2 {
+    text-align: center;
+    width: 200px;
+    border: 2px solid white;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: 0.5s;
+  }
+  
+  div h2:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Main Foodhome Section */
+  .foodhome {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    overflow-x: hidden; /* Extra safety */
+  }
+  
+  
+  
+  .foodhome-top {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    perspective: 1200px; /* Ensure 3D effect is visible */
+  }
+  
+  /* Ensure images support 3D transform */
+  .foodhome-top img {
+    display: block; /* Ensure the transform applies */
+    width: 100%;
+    max-width: 220px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(1.3) contrast(100%) saturate(100%);
+    opacity: 0.9;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform-origin: center; /* Ensures rotation happens from the middle */  
+  }
+  
+  /* 3D Rotation Effect */
+  .foodhome-top img:hover {
+  
+    box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.7); /* Adds depth */
+  }
+  
+  /* Bottom Paragraph Section */
+  .foodhome-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .foodhome-bottom p {
+    font-family: "Charm", cursive;
+    width: 70%;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    line-height: 2;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  /* ============================= */
+  /* RESPONSIVE DESIGN - MEDIA QUERIES */
+  /* ============================= */
+  
+  @media (max-width:1940px) {
+    .foodhome-bottom p {
+      font-size: 23px;
+    }
+  }
+  @media (max-width:1000px)  {
+    .foodhome-top {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 20px;
+      justify-content: center;
+    }
+    .foodhome-top img {
+      width: 100%;
+      max-width: 200px;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: 0.5s;
+      filter: brightness(1.3) contrast(100%) saturate(100%);
+      opacity: 0.9;
+      box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5);
+      transition: 1s;
+    }
+  }
+  @media (max-width:550px) {
+    .foodhome-top img {
+      width: 100%;
+      max-width: 150px;
+      height: 160px;
+    }
+  }
+  @media (max-width:470px) {
+    .foodhome-bottom p  {
+      font-size: 17px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  

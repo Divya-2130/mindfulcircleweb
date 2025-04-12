@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poopins', sans-serif;
+}
+.explore {
+    gap: 5;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items:  center;
+    justify-content:  center;
+}
+.div-explore {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto ;
+}
+.div-explore p {
+    padding-top: 4%;
+    font-size: 21px;
+    font-weight: 300;
+    font-family: "Taviraj", serif;
+
+}
+.div-explore h3 {
+    padding-top: 5%;
+    font-size: 28px;
+    font-weight: 500;
+    padding-right: 5%;
+    /* font-family: "Ribeye", serif; */
+
+}
+.div-explore h4 {
+
+    font-size: 30px;
+  font-family: "Bad Script", cursive;
+}
+.div-explore video {
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+    max-width: 250px;
+    height: 250px;
+    box-shadow: 10px 10px 30px rgba(85, 79, 79, 0.7); /* Adds depth */
+    transition: 2s;
+}
+.div-explore video:hover {
+    
+    transform: rotateY(-45deg) skew(-15deg); /* Rotates on Y-axis */
+    box-shadow: 10px 10px 30px rgba(68, 57, 57, 0.7); /* Adds depth */
+
+}
+.explore hr {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .explore {
+        gap: 5;
+        margin-top: 2%;
+        margin-bottom: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        align-items:  center;
+        justify-content:  center;
+    }
+    .div-explore video {
+        width: 100%;
+        object-fit: cover;
+        box-shadow: 3px 3px 10px rgba(85, 79, 79, 0.7); /* Adds depth */
+        max-width: 150px;
+        height: 150px;
+    }
+    .div-explore p {
+        line-height: 1.6;
+        font-size: 17px;
+        font-weight: 300;
+    }
+    .div-explore h3 {
+        font-size: 23px;
+
+        padding-right: 5%;
+
+    
+    }
+    .div-explore h4 {
+        font-size: 25px;
+    
+    }
+}
+@media (max-width: 500px) {
+    .explore {
+        gap: 5;
+        margin-top: 2%;
+        margin-bottom: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        align-items:  center;
+        justify-content:  center;
+    }
+    .div-explore {
+        padding:10% 0;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: auto  ;
+    }
+    /* Styling for the horizontal line */
+    .explore hr {
+        display: block;
+        width: 100%; /* Makes it span the full width of the container */
+        height: 4px; /* Adjust thickness */
+        border: none;
+        background-color: rgba(12, 16, 12, 0.5); /* Light white color */
+        margin: 10px 0; /* Adjust spacing */
+  }
+  
+}
