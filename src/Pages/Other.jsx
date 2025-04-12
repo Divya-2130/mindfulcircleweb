@@ -12,7 +12,7 @@
 //                 <Explore
 //                  key={i}
 //                  id={explore.id}
-//                  viedo={explore.viedo}
+//                  video={explore.video}
 //                  title={explore.title}
 //                  subtitle={explore.subtitle}
 //                  description={explore.description}  
@@ -47,7 +47,7 @@ const Other = (props) => {
                         <Explore
                             key={i}
                             id={explore.id}
-                            viedo={explore.viedo}  // Fixed typo here
+                            video={explore.video}  // Fixed typo here
                             title={explore.title}
                             subtitle={explore.subtitle}
                             description={explore.description}  
